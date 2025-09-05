@@ -23,7 +23,7 @@
       type="image/png"
       href="./assets/img/Shopee-Logo-Transparent-Background.png"
     />
-    <title>Shoppe</title>
+    <title>Shopee</title>
   </head>
   <body>
     <div class="wrapper">
@@ -33,11 +33,14 @@
           <!-- Header navigation -->
           <div class="header__navbar">
             <ul class="header__navbar-list">
-              <li class="header__navbar-item">Kênh người bán</li>
+              <li class="header__navbar-item">
+                <a href="" class="header__shop-chanel">Kênh người bán</a>
+              </li>
               <li
                 class="header__navbar__qr-code header__navbar-item header__navbar-item-separate"
               >
-                Tải ứng dụng
+                <a href="" class="header__download-app">Tải ứng dụng</a>
+
                 <div class="qr-code">
                   <img
                     class="header__qr-img"
@@ -77,7 +80,7 @@
               <li
                 class="header__navbar-item header__navbar-item--has-notification"
               >
-                <a href="#" class="header__navbar-item-link">
+                <a href="" class="header__navbar-item-link">
                   <i class="header__navbar-icon fa-regular fa-bell"></i>
                   Thông báo
                 </a>
@@ -312,36 +315,84 @@
                 </g>
               </svg>
             </div>
-            <div class="header__search-box">
-              <input
-                type="search"
-                name=""
-                id=""
-                placeholder="Tìm kiếm sản phẩm"
-                class="header__search-input"
-              />
-              <div class="header__search-option">
-                <span class="header__search-option-label">Tất cả danh mục</span>
-                <i
-                  class="header__search-option-icon fa-solid fa-chevron-down"
-                ></i>
-                <ul class="header__search-option-list">
-                  <li class="header__search-option-item">
-                    <span class="header__search-option-item-label">
-                      Trong Automative
-                    </span>
-                    <i
-                      class="header__search-option-item-icon fa-solid fa-check"
-                    ></i>
-                  </li>
-                  <li class="header__search-option-item">
-                    <span> Trong Shoppe </span>
-                  </li>
-                </ul>
+            <div class="header__search-box-bar">
+              <div class="header__search-box">
+                <div class="header__search-input-wrapper">
+                  <input
+                    type="search"
+                    name=""
+                    id=""
+                    placeholder="Tìm kiếm sản phẩm"
+                    class="header__search-input"
+                  />
+                  <ul class="search-history">
+                    <li class="header-search-history-item">Lịch sử tìm kiếm</li>
+                    <li class="search-history-item">
+                      <a href="" class="search-history-item-link">
+                        Ô tô Honda
+                      </a>
+                    </li>
+                    <li class="search-history-item">
+                      <a href="" class="search-history-item-link">
+                        Ô tô Ford
+                      </a>
+                    </li>
+                    <li class="search-history-item">
+                      <a href="" class="search-history-item-link">
+                        Ô tô Mitsubishi
+                      </a>
+                    </li>
+                    <li class="search-history-item">
+                      <a href="" class="search-history-item-link">
+                        Ô tô Toyota
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="header__search-option">
+                  <span class="header__search-option-label"
+                    >Tất cả danh mục</span
+                  >
+                  <i
+                    class="header__search-option-icon fa-solid fa-chevron-down"
+                  ></i>
+                  <ul class="header__search-option-list">
+                    <li class="header__search-option-item">
+                      <span class="header__search-option-item-label">
+                        Trong Automative
+                      </span>
+                      <i
+                        class="header__search-option-item-icon fa-solid fa-check"
+                      ></i>
+                    </li>
+                    <li class="header__search-option-item">
+                      <span> Trong Shoppe </span>
+                    </li>
+                  </ul>
+                </div>
+                <button type="button" class="search__button">
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
               </div>
-              <button type="button" class="search__button">
-                <i class="fa-solid fa-magnifying-glass"></i>
-              </button>
+              <div class="header__search-box__secondary-select-option">
+                <div class="secondary-select-option-list">
+                  <a href="" class="secondary-select-option-item"
+                    >Đế lót giày êm chân</a
+                  ><a href="" class="secondary-select-option-item"
+                    >Tai nghe Airport Pro 4</a
+                  ><a href="" class="secondary-select-option-item"
+                    >Giày chạy bộ nam</a
+                  ><a href="" class="secondary-select-option-item"
+                    >Giày siêu nhẹ</a
+                  ><a href="" class="secondary-select-option-item"
+                    >Type C to 3.5mm</a
+                  ><a href="" class="secondary-select-option-item"
+                    >IPhone 14 Pro Max giá rẻ 1k</a
+                  ><a href="" class="secondary-select-option-item"
+                    >Khăn tổ quốc</a
+                  >
+                </div>
+              </div>
             </div>
             <div class="header__cart">
               <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
@@ -350,7 +401,153 @@
         </div>
         <!-- modal login and register here -->
       </div>
-      <div class="content"></div>
+      <div class="content">
+        <div class="grid">
+          <div class="content__banner-wrapper">
+            <div class="content__banner">
+              <img
+                class="content__banner-img"
+                src="./assets/img/sale-banner.png"
+                alt="Sale banner"
+                srcset=""
+              />
+            </div>
+          </div>
+          <div class="shop-list">
+            <div class="shop-list-header">
+              <a href="" class="shop-list-title">SHOPEE MALL</a>
+              <a href="" class="shop-list-view-all"
+                >Xem tất cả
+                <i class="fa-solid fa-chevron-right"></i>
+              </a>
+            </div>
+            <div class="shop-list-body">
+              <div class="shop-list-wrapper">
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/hammer-shop-img.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/torc-helmet.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/r-shop.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/meguards.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/hoang-viet-shop.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/gia-tot-shop.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/royal-shop.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/spr-shop.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/viet-hung-shop.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/areon.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/phuc-loc-toan.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/vin.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+                <div class="shop-item">
+                  <a href="" class="shop-link">
+                    <img
+                      src="./assets/img/hammer-shop-img.jfif"
+                      alt=""
+                      class="shop-item-img"
+                    />
+                  </a>
+                </div>
+              </div>
+              <div class="view-next-shop">
+                <i class="view-next-shop-icon fa-solid fa-chevron-right"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="footer"></div>
     </div>
   </body>
