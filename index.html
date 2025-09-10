@@ -370,7 +370,9 @@
                       ></i>
                     </li>
                     <li class="header__search-option-item">
-                      <span> Trong Shoppe </span>
+                      <span class="header__search-option-item-label">
+                        Trong Shoppe
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -695,6 +697,7 @@
           <div class="product-list-wrapper">
             <div class="grid">
               <div class="grid__row">
+                <!-- filters side bar -->
                 <div class="grid__column-2">
                   <div class="category">
                     <div class="category__header">
@@ -1291,7 +1294,82 @@
                     </button>
                   </div>
                 </div>
-                <div class="grid__column-10"></div>
+                <!-- sort bart and item list -->
+                <div class="grid__column-10">
+                  <!-- sort bar -->
+                  <div class="sort-bar-wrapper">
+                    <div class="sort-bar-filter">
+                      <span class="sort-bar-lable">Sắp xếp theo</span>
+                      <div class="btn btn--primary sort-bar-option">
+                        <span class="sort-bar-option__label"> Phổ biến </span>
+                      </div>
+                      <div class="btn sort-bar-option">
+                        <span class="sort-bar-option__label"> Mới nhất </span>
+                      </div>
+                      <div class="btn sort-bar-option">
+                        <span class="sort-bar-option__label"> Bán chạy </span>
+                      </div>
+                      <div
+                        class="header__search-option sort-bar-option sort-bar-select-option-wrapper"
+                      >
+                        <span
+                          class="header__search-option-label sort-bar-select-option__label"
+                          >Giá</span
+                        >
+                        <i
+                          class="header__search-option-icon sort-bar-select-option__icon fa-solid fa-chevron-down"
+                        ></i>
+                        <ul
+                          class="header__search-option-list sort-bar-select-option__list"
+                        >
+                          <li
+                            class="header__search-option-item sort-bar-select-option__item"
+                          >
+                            <span
+                              class="header__search-option-item-label sort-bar-select-option__label"
+                            >
+                              Giá: Thấp đến Cao
+                            </span>
+                          </li>
+                          <li
+                            class="header__search-option-item sort-bar-select-option__item"
+                          >
+                            <span
+                              class="header__search-option-item-label sort-bar-select-option__label"
+                            >
+                              Giá: Cao đến Thấp
+                            </span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="sort-bar__paging-wrapper">
+                      <div class="sort-bar__paging">
+                        <span class="current-page">1</span>
+                        <span class="separate">/</span>
+                        <span class="total-page">6</span>
+                      </div>
+                      <div class="page-control-btn">
+                        <div
+                          class="pre-page-btn pre-page-btn--inactive page-btn"
+                        >
+                          <i class="page-btn-icon fa-solid fa-chevron-left"></i>
+                        </div>
+                        <div class="next-page-btn page-btn">
+                          <i
+                            class="page-btn-icon fa-solid fa-chevron-right"
+                          ></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- item list -->
+                  <div class="main-item-list-wrapper">
+                    <div class="main-item-list">
+                      <div class="main-item"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

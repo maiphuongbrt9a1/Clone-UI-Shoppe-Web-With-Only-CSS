@@ -1103,6 +1103,7 @@ a {
   font-size: 1.6rem;
   font-weight: 600;
   text-transform: uppercase;
+  height: 30px;
   margin-top: 30px;
 }
 
@@ -1195,4 +1196,97 @@ a {
 .shopee-checkbox-star {
   padding-left: 12px;
   padding-right: 12px;
+}
+
+.sort-bar-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.4rem;
+  background-color: #ededed;
+  height: 60px;
+  padding: 13px 20px;
+}
+
+.sort-bar-filter {
+  display: inline-flex;
+  align-items: center;
+}
+
+.sort-bar-lable {
+  margin-right: 15px;
+}
+
+.sort-bar-option {
+  margin-right: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  color: #212145 !important;
+  border: none;
+}
+.btn.btn--primary.sort-bar-option {
+  color: var(--white-color) !important;
+}
+
+.btn.sort-bar-option {
+  min-width: 90px !important;
+}
+
+.sort-bar-select-option-wrapper {
+  height: 36px;
+  min-width: 200px;
+  border-radius: 2px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sort-bar-select-option__list {
+  min-width: 200px;
+}
+
+.sort-bar-select-option__item:hover .sort-bar-select-option__label {
+  color: var(--primary-color) !important;
+}
+
+.sort-bar__paging-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 115px;
+}
+
+.current-page {
+  color: var(--primary-color);
+}
+
+.page-control-btn {
+  display: inline-flex;
+  align-items: center;
+  width: 68px;
+  box-shadow: 0 1px 2px var(--border-color);
+}
+
+.page-btn {
+  height: 34px;
+  width: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--white-color);
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.pre-page-btn {
+  border-right: 1px solid var(--border-color);
+}
+
+.pre-page-btn--inactive {
+  cursor: default;
+  background: #f9f9f9;
+}
+
+.pre-page-btn--inactive > .page-btn-icon {
+  color: #cfcfcf;
 }
